@@ -39,6 +39,7 @@
                         <th>TANGGAL MULAI SEWA</th>
                         <th>TANGGAL SELESAI SEWA</th>
                         <th>HARGA SEWA</th>
+                        <th>NO KENDARAAN</th>
                         <th>Created At</th>
                         <th>Action</th>
                     </tr>
@@ -49,7 +50,8 @@
                             <td>{{ $value->nama_customer }}</td>
                             <td>{{ $value->tanggal_mulai_sewa }}</td>
                             <td>{{ $value->tanggal_selesai_sewa }}</td>
-                            <td>{{ $value->harga_sewa }}</td>
+                            <td>{{ $value->harga_sewa }}</td>                            
+                            <td>{{ $value->no_plat }}</td>
                             <td>{{ $value->created_at }}</td>
                             <td>
                                 <a href="#editModal{{ $value->id }}" data-toggle="modal" class="btn btn-sm btn-primary mb-1"><i class="fas fa-edit fa-sm"></i> Update</a>
